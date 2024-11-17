@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Kalam:wght@300;400;700&display=swap');
 *{
     box-sizing: border-box;
     margin: 0;
@@ -41,4 +39,57 @@ body{
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: #626970;
+  }
+
+
+
+
+  .sphere {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    transform-style: preserve-3d;
+    animation: horizontal-rotate 10s linear infinite;
+  }
+  
+  @keyframes horizontal-rotate {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(360deg);
+    }
+  }
+
+
+  .thanksMsg{
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 62px;
+    font-style: normal;
+    text-align: center;
+  }
+
+  .mainThanksBox{
+
+    color: white;
+    --Paper-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12);
+    background: rgb(23, 23, 33);
+    border-radius: 14px;
+    border: 0.1px solid rgb(133, 76, 230);
+  }
+
+  .buttonDiv{
+
+    display: flex;
+    justify-content: center;
+  }
+
+  .okbtn{
+    background: linear-gradient(225deg, rgb(132, 0, 255) 0%, rgb(230, 0, 255) 100%);
+    color: white;
+  }
+  .param{
+    text-align: center;
   }

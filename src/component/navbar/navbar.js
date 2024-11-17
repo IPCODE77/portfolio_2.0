@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Nav,ShinyButton, StyledIcon,NavLink, NavbarContainer, NavLogo, ButtonContainer, GitHubButton, MobileIcon, NavItems, MobileMenu, MobileMenuLink } from "./NavBarStyledComponent"
+import { Nav, ShinyButton, StyledIcon, NavLink, NavbarContainer, NavLogo, ButtonContainer, GitHubButton, MobileIcon, NavItems, MobileMenu, MobileMenuLink } from "./NavBarStyledComponent"
 import { FaBarsStaggered as Fabars } from "react-icons/fa6";
 import { RxCross2 as CrossIcon } from "react-icons/rx";
 import { Bio } from "../../data/constants";
@@ -13,7 +13,7 @@ export const Navbar = () => {
     const [open, setopen] = useState(false);
     const [cancel, setcancel] = useState(false);
 
-    const handelIcon =()=>{
+    const handelIcon = () => {
 
         setopen(!open);
         //setcancel(!cancel);
@@ -38,17 +38,19 @@ export const Navbar = () => {
                             <CrossIcon onClick={handelIcon}></CrossIcon>
                         </>
                     )
-                    :
-                    (<>
-                        <Fabars onClick={handelIcon}></Fabars>
-                           
+                        :
+                        (<>
+                            <Fabars onClick={handelIcon}></Fabars>
+
                         </>)}
                 </MobileIcon>
                 <NavItems>
                     <NavLink href="#about">About</NavLink>
+                    <NavLink href="#skills">Skills</NavLink>
                     <NavLink href="#experience">Experience</NavLink>
                     <NavLink href="#projects">Projects</NavLink>
                     <NavLink href="#education">Education </NavLink>
+                    <NavLink href="#contact">Contact</NavLink>
 
 
 
@@ -62,22 +64,44 @@ export const Navbar = () => {
             {
                 open && (
                     <MobileMenu isOpen={open}>
-
-                        <MobileMenuLink href="#about" onClick={() => { setopen(!open) }}>
+                        <MobileMenuLink
+                            href="#about"
+                            onClick={(e) => {setopen(!open); }}
+                        >
                             About
                         </MobileMenuLink>
-                        <MobileMenuLink href="#experience" onClick={() => { setopen(!open) }}>
+                        <MobileMenuLink
+                            href="#skills"
+                            onClick={() => setopen(!open)}
+                        >
+                            Skills
+                        </MobileMenuLink>
+                        <MobileMenuLink
+                            href="#experience"
+                            onClick={() => setopen(!open)}
+                        >
                             Experience
                         </MobileMenuLink>
-                        <MobileMenuLink href="#projects" onClick={() => { setopen(!open) }}>
-                            Projects
-                        </MobileMenuLink>
-
-                        <MobileMenuLink href="#education" onClick={() => { setopen(!open) }}>
+                        <MobileMenuLink
+                            href="#education"
+                            onClick={() => setopen(!open)}
+                        >
                             Education
                         </MobileMenuLink>
-                        <GitHubButton href={Bio.github} target="_blank">GitHub Profile</GitHubButton>
+                        <MobileMenuLink
+                            href="#contact"
+                            onClick={() => setopen(!open)}
+                        >
+                            Contact
+                        </MobileMenuLink>
+                        <GitHubButton
+                            href={Bio.github}
+                            target="_blank"
+                        >
+                            GitHub Profile
+                        </GitHubButton>
                     </MobileMenu>
+
                 )
             }
         </Nav>

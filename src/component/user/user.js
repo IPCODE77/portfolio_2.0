@@ -3,6 +3,11 @@ import { Bio } from "../../data/constants"
 import Typewriter from "typewriter-effect";
 import itish from "../../image/itish.jpg"
 import UserBgAnimation from "../UserBgAnimation/index"
+import { Container } from "lucide-react";
+import styled from 'styled-components'
+import { Div } from "../UserBgAnimation/userBgAnimation";
+
+
 
 export const User = () => {
     return (

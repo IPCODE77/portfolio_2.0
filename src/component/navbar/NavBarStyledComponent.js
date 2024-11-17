@@ -159,12 +159,13 @@ export const MobileMenuItems = styled.ul`
   height: 100%;
 `
 
-export const MobileMenuLink = styled(LinkR)`
+export const MobileMenuLink = styled.a`
   color: ${({ theme }) => theme.text_primary};
   font-weight: 500;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
+
   :hover {
     color: ${({ theme }) => theme.primary};
   }
@@ -257,7 +258,7 @@ const rotateAnimation = `
 
 export const StyledIcon = styled(DiCssdeck)`
 ${rotateAnimation}
-animation:rotate 0.9s infinite;
+animation:rotate 0.9s ease-in-out;
 `
 
 
@@ -305,7 +306,11 @@ export const ShinyButton = styled.a`
 
   /* Hover effect */
   &:hover {
-    color: rgb(255 255 255);  /* Change text color on hover */
+    color: rgb(255 255 255);  
+    border:2px solid rgb(132, 0, 255);
+       background-color: rgba(132, 0, 255, 0.1); 
+           transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
   }
 
   &:focus {
