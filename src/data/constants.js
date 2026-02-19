@@ -1,5 +1,6 @@
 import bazarside from "../image/bazarside.png"
 import nerp from "../image/nerp.png"
+import tcs from "../image/TCS_Logo.jpg"
 import face from "../image/face.jfif"
 import login from "../image/login.jpg"
 import bgremover from "../image/bgRemover.png"
@@ -83,13 +84,14 @@ export const skills = [
         image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg",
       },
       {
+        name: "Spring Boot",
+        image: "https://img.icons8.com/?size=100&id=90519&format=png&color=000000",
+      },
+      {
         name: "Node Js",
         image: "https://nodejs.org/static/images/logo.svg",
       },
-       {
-        name: "Java",
-        image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg",
-      },
+       
       {
         name: "Express Js",
         image:
@@ -177,21 +179,21 @@ export const skills = [
         image:
           "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/512px-Visual_Studio_Code_1.35_icon.svg.png?20210804221519",
       },
-      // {
-      //   name: "Postman",
-      //   image:
-      //     "https://camo.githubusercontent.com/93b32389bf746009ca2370de7fe06c3b5146f4c99d99df65994f9ced0ba41685/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f676574706f73746d616e2f676574706f73746d616e2d69636f6e2e737667",
-      // },
+       {
+        name: "Postman",
+        image:
+          "https://camo.githubusercontent.com/93b32389bf746009ca2370de7fe06c3b5146f4c99d99df65994f9ced0ba41685/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f676574706f73746d616e2f676574706f73746d616e2d69636f6e2e737667",
+      },
       // {
       //   name: "Adobe XD",
       //   image:
       //     "https://camo.githubusercontent.com/c205ecbe12500177d102169d97bc1c17c545155fdf5ec78c08d54ac53e5b38c1/68747470733a2f2f63646e2e776f726c64766563746f726c6f676f2e636f6d2f6c6f676f732f61646f62652d78642e737667",
       // },
-      // {
-      //   name: "Figma",
-      //   image:
-      //     "https://camo.githubusercontent.com/ed93c2b000a76ceaad1503e7eb9356591b885227e82a36a005b9d3498b303ba5/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6669676d612f6669676d612d69636f6e2e737667",
-      // },
+       {
+        name: "Figma",
+        image:
+          "https://camo.githubusercontent.com/ed93c2b000a76ceaad1503e7eb9356591b885227e82a36a005b9d3498b303ba5/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6669676d612f6669676d612d69636f6e2e737667",
+     },
     ],
   },
 ];
@@ -199,48 +201,54 @@ export const skills = [
 export const experiences = [
   {
     id: 0,
-    img: nerp,
-    role: "Software Developer I",
-    company: "Nirmalya Labs Pvt. Ltd.",
-    date: "Oct 2023 -  Present",
-    desc: "Developing ERP solutions using React, Python, and Java. Delivering scalable, efficient systems to streamline business processes in a dynamic product-based environment.",
+    img: tcs,
+    role: "Systems Engineer",
+    company: "TATA Consultancy Services Limited (TCSL)",
+    date: "February 2026 -  Present",
+    desc: "Developing and maintaining distributed microservices-based applications using Java and Spring Boot. Designing REST APIs, integrating third-party services, and optimizing application performance. Actively involved in code reviews, debugging, and ensuring adherence to clean architecture and best practices.",
     skills: [
-      "Node js",
-      "React",
       "Java",
+      "Spring Boot",
+      "Microservices",
+      "React",
       "AWS",
       "EC2",
       "Kafka",
       "React Native",
       "JavaScript",
-      " Next Js"
+      "MySql",
+      "Mockito",
+      "JPA"
     ],
     doc: "https://media.licdn.com/dms/image/D4D2DAQFlp60ZqHuaFQ/profile-treasury-image-shrink_1280_1280/0/1691180828512?e=1692381600&v=beta&t=mM5Y_NE5EPlQhez5FAN6NLVSKcO_Ojt_9Gq3mnFGkAQ",
   },
-  // {
-  //   id: 0,
-  //   img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/neurobit.jpeg?alt=media&token=1cacbb7b-e5ea-4efb-9b3d-f5a31b9564ad",
-  //   role: "Frontend Engineer Intern",
-  //   company: "Neurobit",
-  //   date: "June 2023 - Present",
-  //   desc: "Working on the frontend of the web application using ReactJS, Redux, and Material UI.",
-  //   skills: [
-  //     "ReactJS",
-  //     "Redux",
-  //     "NodeJs",
-  //     "Material UI",
-  //     "HTML",
-  //     "CSS",
-  //     "JavaScript",
-  //   ],
-  //   doc: "https://firebasestorage.googleapis.com/v0/b/buckoid-917cf.appspot.com/o/Screenshot%20from%202023-05-28%2023-20-46.png?alt=media&token=5570f995-e8f4-4f12-bb2f-73bcf4b20730",
-  // },
   {
     id: 1,
+    img: nerp,
+    role: "Software Developer II",
+    company: "Nirmalya Labs Pvt. Ltd.",
+    date: "October 2022 -  December 2025",
+    desc: "Developing ERP solutions using React,  Java , SpringBoot and microservices. Delivering scalable, efficient systems to streamline business processes in a dynamic product-based environment.",
+    skills: [
+      "Java",
+      "Spring Boot",
+      "Microservices",
+      "React",
+      "AWS",
+      "EC2",
+      "Kafka",
+      "React Native",
+      "JavaScript",
+      "MySql"
+    ],
+    doc: "https://media.licdn.com/dms/image/D4D2DAQFlp60ZqHuaFQ/profile-treasury-image-shrink_1280_1280/0/1691180828512?e=1692381600&v=beta&t=mM5Y_NE5EPlQhez5FAN6NLVSKcO_Ojt_9Gq3mnFGkAQ",
+  },
+  {
+    id: 2,
     img: bazarside,
     role: "Fullstack Developer",
     company: "Bazarside",
-    date: "June 2022 - July 2023",
+    date: "January 2022 - June 2022",
     desc: "Full Stack Developer at Bazarside, working on React, Node.js, Python, MongoDB for e-commerce solutions.",
     skills: [
       "ReactJS",
@@ -256,48 +264,14 @@ export const experiences = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/girlScript.jpeg?alt=media&token=e656a621-cf3c-4230-bf0f-e74b4cec6035",
     role: "Open Source Contributor ",
     company: "GirlScript Summer of Code",
     date: "May 2022",
     desc: "Contributing to different open-source projects and learn from industry experts",
     doc: "https://media.licdn.com/dms/image/D4D22AQGzSpgFaR4hsQ/feedshare-shrink_800/0/1684079632872?e=1687996800&v=beta&t=i0xWn_k32Oj9SxKfc6rARSbOghXD9Ge6WyEb2p2vvrc",
-  },
-  // {
-  //   id: 3,
-  //   img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/gdsc.jpeg?alt=media&token=c162329c-efaa-4be8-a173-8d3f4c48ea70",
-  //   role: "Android Developer",
-  //   company: "DSC KIIT",
-  //   date: "Nov2021 - Present",
-  //   desc: "As an Android developer at the Google Developers Student Club (GDCS), I have had the opportunity to work on exciting projects and collaborate with talented developers who share my passion for technology. Through my involvement with GDCS, I have also had the opportunity to host and participate in numerous events, including hackathons, study jams, and workshops.",
-  //   skills: [
-  //     "Leadership",
-  //     "Mobile Application Development",
-  //     "Kotlin",
-  //     "XML",
-  //     "Figma",
-  //   ],
-  // },
-  // {
-  //   id: 4,
-  //   img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/Rudraksha.jpeg?alt=media&token=8f83f41e-d0a1-486f-9c7f-dd4cd1d09e8d",
-  //   role: "Android Developer Intern",
-  //   company: "Rudraksha Welffare Foundation",
-  //   date: "June 2021 - Oct 2021",
-  //   desc: "As an Android Developer Intern at Rudraksha Welfare Foundation from June 2021 to October 2021, I gained valuable hands-on experience in application development. During my tenure, I contributed to the development of the application's back-end cloud functions using Firebase and implemented a front-end with the MVVM structure, which was designed using Figma. I also added a one-to-one video call feature, conceptualized new features, and optimized app performance. This internship helped me enhance my skills in Android development and gave me an opportunity to work in a collaborative team environment.",
-  //   skills: [
-  //     "Android",
-  //     "Java",
-  //     "Kotlin",
-  //     "XML",
-  //     "Node Js",
-  //     "Cloud Firestore",
-  //     "Firebase",
-  //     "Figma",
-  //   ],
-  //   doc: "https://firebasestorage.googleapis.com/v0/b/buckoid-917cf.appspot.com/o/WhatsApp%20Image%202023-05-05%20at%2012.07.39%20AM.jpeg?alt=media&token=9f0e1648-568b-422d-bd0b-1f125f722245",
-  // },
+  }
 ];
 
 export const education = [
@@ -332,10 +306,10 @@ export const projects = [
   {
     id: 9,
     title: "Login and Registration Authentication System",
-    date: "Jun 2024 - Jul 2024",
+    //date: "Jun 2024 - Jul 2024",
     description:
-      `This project implements a login and registration authentication system using Python 
-        (Flask / Django) for the backend and React for the frontend.It allows users to securely
+      `This project implements a login and registration authentication system using Java Springboot 
+         for the backend and React for the frontend.It allows users to securely
        register, log in, and manage sessions with JWT tokens.Passwords are hashed using bcrypt 
        for added security.The frontend provides an intuitive user interface with form validation,
     while the backend handles user data storage and authentication via RESTful API endpoints.`
@@ -343,12 +317,11 @@ export const projects = [
       login,
     tags: [
       "React",
-      "Python",
-      "Flask",
+      "Java",
+      "SpringBoot",
       "MySql",
       "JWT",
       "CI/CD",
-      "Redux",
       "Axios",
     ],
     category: "web app",
@@ -358,94 +331,53 @@ export const projects = [
   {
     id: 0,
     title: "Image Background Remover",
-    date: "Apr 2023 - May 2023",
+   // date: "Apr 2023 - May 2023",
     description:
       "The Image Background Remover is a web tool for uploading and processing images to remove backgrounds. It uses React for the frontend, while the backend can integrate Python’s rembg package for automatic background removal. It provides a simple and efficient user experience for image processing.",
     image:
       bgremover,
-    tags: ["React Js", "Python", "remove.bg", "MongoDb", "Redux"],
+    tags: ["React Js", "Java","SpringBoot", "remove.bg", "MongoDb"],
     category: "web app",
     github: "https://github.com/rishavchanda/Podstream",
-    webapp: "https://podstream.netlify.app/",
-    member: [
-      {
-        name: "Rishav Chanda",
-        img: "https://avatars.githubusercontent.com/u/64485885?v=4",
-        linkedin: "https://www.linkedin.com/in/rishav-chanda-b89a791b3/",
-        github: "https://github.com/rishavchanda/",
-      },
-      {
-        name: "Upasana Chaudhuri",
-        img: "https://avatars.githubusercontent.com/u/100614635?v=4",
-        linkedin: "https://www.linkedin.com/in/upasana-chaudhuri-2a2bb5231/",
-        github: "https://github.com/upasana0710",
-      },
-    ],
+    webapp: "https://podstream.netlify.app/"
+    
   },
   {
     id: 1,
     title: "PokeExplorer",
-    date: "Jan 2024",
+    //date: "Jan 2024",
     description:
       "A fan-made Pokémon website featuring an interactive Pokédex where users can explore Pokémon details like types, abilities, and evolutions. With search and filter options, it’s easy to find favorites. Built for both desktop and mobile, this site provides a seamless experience for all Pokémon fans.",
     image:
       pokemon,
     tags: [
       "React Js",
-      "MongoDb",
-      "Node Js",
-      "Express Js",
-      "Redux",
+      "Java",
+      "Spring Boot",
+      "Microservices",
+      "MySql",
       "PokeApi",
     ],
-    category: "web app",
-    github: "https://github.com/rishavchanda/Project-Management-App",
-    webapp: "https://vexa-app.netlify.app/",
+    category: "web app"
   },
   {
     id: 2,
     title: "Event Ticket Booking and Management Website",
-    date: "July 204 - Present",
+    //date: "July 204 - Present",
     description:
    "The Event Ticket Booking and Management Website allows users to browse, book, and manage event tickets. Built with React for the frontend and Node.js for the backend, it includes features like event browsing, user authentication, booking, and secure payment integration, along with admin tools for event management and reporting.",
    image:
       event,
-    tags: ["React", "Node Js", "MongoDB", "Vite", "JWT", "Payment Gateway"],
+    tags: ["React", "Java", "SpringBoot", "Vite", "JWT", "Payment Gateway"],
     category: "machine learning",
     github: "https://github.com/rishavchanda/Brain-Tumor-Detection",
-    webapp: "https://brain-tumor.netlify.app/",
-    member: [
-      {
-        name: "Rishav Chanda",
-        img: "https://avatars.githubusercontent.com/u/64485885?v=4",
-        linkedin: "https://www.linkedin.com/in/rishav-chanda-b89a791b3/",
-        github: "https://github.com/rishavchanda/",
-      },
-      {
-        name: "Upasana Chaudhuri",
-        img: "https://avatars.githubusercontent.com/u/100614635?v=4",
-        linkedin: "https://www.linkedin.com/in/upasana-chaudhuri-2a2bb5231/",
-        github: "https://github.com/upasana0710",
-      },
-    ],
+    webapp: "https://brain-tumor.netlify.app/"
+    
   },
-  // {
-  //   id: 10,
-  //   title: "Job Finding App",
-  //   date: "Jun 2023 - Jul 2023",
-  //   description:
-  //     "A Job Finding App made with React Native, Axios. Users can search for any job coming from API and apply there.",
-  //   image:
-  //     "https://user-images.githubusercontent.com/64485885/255237090-cf798a2c-1b41-4bb7-b904-b5353a1f08e8.png",
-  //   tags: ["React Native", "JavaScript", "Axios"],
-  //   category: "android app",
-  //   github: "https://github.com/rishavchanda/Job-finder-App",
-  //   webapp: "https://github.com/rishavchanda/Job-finder-App",
-  // },
   {
     id: 7,
     title: "Quiz App",
-    date: "Dec 2020 - Jan 2021",
+    //date: "Dec 2020 - Jan 2021",
     description:
       "A android quiz app made with Java and Firebase. It has a login page where users can log in with their Google account. It has a sidebar where users can see all the quiz categories and can create a new quiz. It has a leaderboard where users can see the top 10 scorers. It has a search bar where users can search for a particular quiz.",
     image:
