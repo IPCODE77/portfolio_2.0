@@ -11,7 +11,7 @@ import pyspider from "../image/pyspider.jpg"
 import scaler from "../image/scaler.jpg"
 
 export const Bio = {
-  name: "Itish Kumar",
+  name: "Itish Kumar pati",
   roles: [
     "Full Stack Developer",
     "Programmer",
